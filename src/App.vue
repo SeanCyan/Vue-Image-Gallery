@@ -20,10 +20,31 @@ export default {
 <style>
 
 html {
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(255, 255, 255);
 }
 
 .gallery {
+    box-sizing: border-box;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+    column-count: 2;
+    column-gap: 0;
+}
+
+.gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+gallery img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* .gallery {
     display: grid;
     grid-template-columns: 1fr;  
     grid-gap: 10px;
@@ -33,13 +54,19 @@ html {
     flex: 1;
     margin: 50px auto;
     padding: 20px;
-}
+    list-style: none;
+} */
 
 @media all and (min-width: 768px){
-    .gallery {
+    /* .gallery {
             grid-template-columns: repeat(3, minmax(100px, 500px));  
             width: 60%;
-    }
+    } */
+
+.gallery {
+    column-count: 3;
+}
+
 }
 
 .thumbnail {
@@ -64,7 +91,9 @@ html {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    width: 60%;
+    width: auto;
+    max-height: 900px;
+    max-width: 1200px;
 }
 
 .fa-times-circle {

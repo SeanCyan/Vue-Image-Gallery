@@ -1,8 +1,8 @@
 <template>              
-    <div class="content">
-        <div class="gallery">
-            <img v-for="img in gallery" :src=img.src @click="showLbx" class="thumbnail">
-        </div>
+    <div class="gallery">
+        <ul>
+            <li v-for="img in gallery"><img :src=img.src class="thumbnail" @click="showLbx"></li>
+        </ul>
         <Lightbox v-show="isVisible"/>
     </div>
 </template> 
@@ -25,9 +25,6 @@ export default {
             currentSrc: "",
             gallery: [
                 {
-                    src: "../../static/castelmezzano.jpg",
-                },
-                {
                     src: "../../static/nature.jpg",
                 },
                 {
@@ -36,11 +33,17 @@ export default {
                 {
                     src: "../../static/alberta.jpg",
                 },
+                                {
+                    src: "../../static/flamingo.jpg",
+                },
                 {
                     src: "../../static/tree.jpg",
                 },
                 {
                     src: "../../static/flowers.jpg",
+                },
+                {
+                    src: "../../static/tram.jpg",
                 },
                 {
                     src: "../../static/tianjin.jpg",
@@ -69,6 +72,9 @@ export default {
                 {
                     src: "../../static/woods.jpg",
                 },
+                                {
+                    src: "../../static/maple.jpg",
+                },
                 ]
         }
     },
@@ -79,6 +85,7 @@ export default {
         this.nextSrc = e.target;
         this.prevSrc = e.target;
         document.body.style.overflow = 'hidden';
+        console.log(e.target);
         },  
         hideLbx: function() {
         this.isVisible = false;
