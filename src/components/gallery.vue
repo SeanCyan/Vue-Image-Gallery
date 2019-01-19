@@ -1,8 +1,6 @@
-<template>              
+<template>         
     <div class="gallery">
-        <ul>
-            <li v-for="img in gallery"><img :src=img.src class="thumbnail" @click="showLbx"></li>
-        </ul>
+        <img v-for="img in gallery" :src=img.src class="thumbnail" @click="showLbx">
         <Lightbox v-show="isVisible"/>
     </div>
 </template> 
@@ -25,15 +23,6 @@ export default {
             currentSrc: "",
             gallery: [
                 {
-                    src: "../../static/nature.jpg",
-                },
-                {
-                    src: "../../static/path.jpg",
-                },
-                {
-                    src: "../../static/alberta.jpg",
-                },
-                                {
                     src: "../../static/flamingo.jpg",
                 },
                 {
@@ -49,31 +38,49 @@ export default {
                     src: "../../static/tianjin.jpg",
                 },
                 {
-                    src: "../../static/moraine.jpg",
+                    src: "../../static/lichterkette.jpg",
                 },
                 {
-                    src: "../../static/cloudss.jpg",
+                    src: "../../static/snowy.jpg",
                 },
                 {
                     src: "../../static/finland.jpg",
                 },
                 {
-                    src: "../../static/forest.jpg",
-                },
-                {
-                    src: "../../static/yosemite.jpg",
-                },
-                {
-                    src: "../../static/landscape.jpg",
+                    src: "../../static/candy.jpg",
                 },
                 {
                     src: "../../static/stanserhorn.jpg",
                 },
                 {
+                    src: "../../static/stones.jpg",
+                },
+                {
+                    src: "../../static/mallow.jpg",
+                },
+                {
+                    src: "../../static/pumpkin.jpg",
+                },
+                {
                     src: "../../static/woods.jpg",
                 },
-                                {
+                {
                     src: "../../static/maple.jpg",
+                },
+                {
+                    src: "../../static/nature.jpg",
+                },
+                {
+                    src: "../../static/balloon.jpg",
+                },
+                {
+                    src: "../../static/yosemite.jpg",
+                },
+                {
+                    src: "../../static/path.jpg",
+                },
+                {
+                    src: "../../static/northernlights.jpg",
                 },
                 ]
         }
@@ -92,7 +99,7 @@ export default {
         document.body.style.overflow = 'auto';
         },
         showNext: function() { 
-        if (this.nextSrc.nextSibling === null) {
+        if (this.nextSrc.nextSibling === null || this.nextSrc.nextSibling.tagName !== 'IMG') {
             return
         } else {
             this.src = this.nextSrc.nextSibling.src;

@@ -19,8 +19,15 @@ export default {
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
 html {
     background-color: rgb(255, 255, 255);
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    padding: 20px;
 }
 
 .gallery {
@@ -28,43 +35,29 @@ html {
     max-width: 1300px;
     padding: 0 50px;
     margin: 0 auto;
-    column-count: 2;
+    column-count: 1;
     column-gap: 0;
-}
-
-.gallery ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
+    font-size: 0px;
 }
 
 gallery img {
     width: 100%;
-    vertical-align: middle;
 }
 
-/* .gallery {
-    display: grid;
-    grid-template-columns: 1fr;  
-    grid-gap: 10px;
-    justify-content: center;
-    position: relative;
-    width: 80%;
-    flex: 1;
-    margin: 50px auto;
-    padding: 20px;
-    list-style: none;
-} */
-
 @media all and (min-width: 768px){
-    /* .gallery {
-            grid-template-columns: repeat(3, minmax(100px, 500px));  
-            width: 60%;
-    } */
 
 .gallery {
     column-count: 3;
+    margin: 50px auto;
+}
+
+}
+
+@media all and (min-width: 1200px){
+
+.gallery {
+    column-count: 4;
+    margin: 50px auto;
 }
 
 }
@@ -84,6 +77,7 @@ gallery img {
     position: fixed;
     top: 0; bottom: 0; left: 0; right: 0;
     background-color: rgba(0,0,0,.7);
+    font-size: 16px;
 }
 
 .lbxImg {
@@ -91,9 +85,8 @@ gallery img {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    width: auto;
-    max-height: 900px;
-    max-width: 1200px;
+    max-height: 80vh;
+    max-width: 60vw;
 }
 
 .fa-times-circle {
