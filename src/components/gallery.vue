@@ -23,64 +23,64 @@ export default {
             currentSrc: "",
             gallery: [
                 {
-                    src: "../../static/flamingo.jpg",
+                    src: "static/flamingo.jpg",
                 },
                 {
-                    src: "../../static/tree.jpg",
+                    src: "static/tree.jpg",
                 },
                 {
-                    src: "../../static/flowers.jpg",
+                    src: "static/flowers.jpg",
                 },
                 {
-                    src: "../../static/tram.jpg",
+                    src: "static/tram.jpg",
                 },
                 {
-                    src: "../../static/tianjin.jpg",
+                    src: "static/tianjin.jpg",
                 },
                 {
-                    src: "../../static/lichterkette.jpg",
+                    src: "static/lichterkette.jpg",
                 },
                 {
-                    src: "../../static/snowy.jpg",
+                    src: "static/snowy.jpg",
                 },
                 {
-                    src: "../../static/finland.jpg",
+                    src: "static/finland.jpg",
                 },
                 {
-                    src: "../../static/candy.jpg",
+                    src: "static/candy.jpg",
                 },
                 {
-                    src: "../../static/stanserhorn.jpg",
+                    src: "static/stanserhorn.jpg",
                 },
                 {
-                    src: "../../static/stones.jpg",
+                    src: "static/stones.jpg",
                 },
                 {
-                    src: "../../static/mallow.jpg",
+                    src: "static/mallow.jpg",
                 },
                 {
-                    src: "../../static/pumpkin.jpg",
+                    src: "/static/pumpkin.jpg",
                 },
                 {
-                    src: "../../static/woods.jpg",
+                    src: "/static/woods.jpg",
                 },
                 {
-                    src: "../../static/maple.jpg",
+                    src: "/static/maple.jpg",
                 },
                 {
-                    src: "../../static/nature.jpg",
+                    src: "/static/nature.jpg",
                 },
                 {
-                    src: "../../static/balloon.jpg",
+                    src: "/static/balloon.jpg",
                 },
                 {
-                    src: "../../static/yosemite.jpg",
+                    src: "/static/yosemite.jpg",
                 },
                 {
-                    src: "../../static/path.jpg",
+                    src: "/static/path.jpg",
                 },
                 {
-                    src: "../../static/northernlights.jpg",
+                    src: "/static/northernlights.jpg",
                 },
                 ]
         }
