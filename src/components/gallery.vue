@@ -59,28 +59,28 @@ export default {
                     src: "static/mallow.jpg",
                 },
                 {
-                    src: "/static/pumpkin.jpg",
+                    src: "static/pumpkin.jpg",
                 },
                 {
-                    src: "/static/woods.jpg",
+                    src: "static/woods.jpg",
                 },
                 {
-                    src: "/static/maple.jpg",
+                    src: "static/maple.jpg",
                 },
                 {
-                    src: "/static/nature.jpg",
+                    src: "static/nature.jpg",
                 },
                 {
-                    src: "/static/balloon.jpg",
+                    src: "static/balloon.jpg",
                 },
                 {
-                    src: "/static/yosemite.jpg",
+                    src: "static/yosemite.jpg",
                 },
                 {
-                    src: "/static/path.jpg",
+                    src: "static/path.jpg",
                 },
                 {
-                    src: "/static/northernlights.jpg",
+                    src: "static/northernlights.jpg",
                 },
                 ]
         }
